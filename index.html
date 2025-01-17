@@ -1,0 +1,898 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>Nityo_Lite</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="logo.svg"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+		<!--flaticon.css-->
+        <link rel="stylesheet" href="assets/css/flaticon.css">
+
+		<!--slick.css-->
+        <link rel="stylesheet" href="assets/css/slick.css">
+		<link rel="stylesheet" href="assets/css/slick-theme.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+		
+		<style>
+			
+			.nav-tabs {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.nav-tabs li {
+    list-style: none;
+    margin: 0;
+}
+
+.nav-tabs a {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px 5px 0 0;
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.nav-tabs a:hover, .nav-tabs .active a {
+    background: #0056b3;
+    color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.single-explore-item {
+    background: linear-gradient(135deg, #f0f4ff, #e6ecff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.single-explore-item:hover {
+    transform: translateY(-5px);
+}
+
+.single-explore-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.single-explore-txt h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin: 15px 0;
+}
+
+.single-explore-txt p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .nav-tabs {
+        flex-direction: column;
+    }
+    .nav-tabs li {
+        margin-bottom: 10px;
+    }
+}
+
+		</style>
+	
+	<style>
+		
+
+	@media (max-width: 768px) {
+    #statistics .statistics-counter {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .single-ststistics-box {
+        width: 100%; 
+        margin-bottom: 15px; 
+        text-align: center;
+    }
+
+    .statistics-content {
+        justify-content: center;
+    }
+
+    /* .counter {
+        font-size: 1.5em; 
+    }
+
+    .single-ststistics-box h3 {
+        font-size: 1em;
+    } */
+}
+
+
+	</style>
+
+<style>
+	.services-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3rem;  
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-item .service-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.service-item .service-text h3 {
+    font-size: 2.5rem; 
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.service-item .service-text p {
+    font-size: 1.7rem; 
+    color: #555;
+    line-height: 1.6;
+}
+
+.service-item .service-image {
+    flex: 1;
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+.service-item .service-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.service-item.reverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        width: 90%;
+    }
+
+    .service-item {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .service-item .service-text {
+        padding: 20px;
+    }
+
+    .service-item .service-image {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .service-item .service-image img {
+        height: 150px;
+    }
+
+    .service-item .service-text h3 {
+        font-size: 1.5rem; 
+    }
+
+    .service-item .service-text p {
+        font-size: 1.1rem;
+    }
+}
+</style>
+
+		<style>
+			
+.logo-container {
+  display: flex;
+  justify-content: flex-start; 
+  padding: 10px;
+}
+
+.logo {
+  max-width: 100px;  
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 80px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 60px; 
+  }
+}
+		</style>
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		<!--header-top start -->
+		
+		<!--header-top end -->
+
+		<!-- top-area Start -->
+		<section class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+			        <div class="container">
+
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+			                <div class="logo-container">
+								<img src="nityo_high_resolution_logo (1).png" alt="Logo" class="logo">
+								<!-- <h1 class="logo-text">Nityo</h1> --> <!-- This can be used instead of the logo image if needed -->
+							  </div>
+
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
+
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                    <li class=" scroll active"><a href="#home">home</a></li>
+			                    <li class="scroll"><a href="#Services">Services</a></li>
+			                    <li class="scroll"><a href="#values">Our Values</a></li>
+			                    <li class="scroll"><a href="#Mission">Mission </a></li>
+			                    <!-- <li class="scroll"><a href="#blog">blog</a></li> -->
+			                    <li class="scroll"><a href="#contact">contact</a></li>
+			                </ul><!--/.nav -->
+			            </div><!-- /.navbar-collapse -->
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+			</div><!--/.header-area-->
+		    <div class="clearfix"></div>
+
+		</section><!-- /.top-area-->
+		<!-- top-area End -->
+
+		<!--welcome-hero start -->
+		<section id="home" class="welcome-hero">
+			<div class="container">
+				<div class="welcome-hero-txt">
+					<h2 style="background-color: white;">Connect Talents With Opportunities  </h2>
+					<!-- <p>
+						Find Best Place, Restaurant, Hotel, Real State and many more think in just One click 
+					</p> -->
+				</div>
+				<!-- <div class="welcome-hero-serch-box">
+					<div class="welcome-hero-form">
+						<div class="single-welcome-hero-form">
+							<h3>what?</h3>
+							<form action="index.html">
+								<input type="text" placeholder="Ex: palce, resturent, food, automobile" />
+							</form>
+							<div class="welcome-hero-form-icon">
+								<i class="flaticon-list-with-dots"></i>
+							</div>
+						</div>
+						<div class="single-welcome-hero-form">
+							<h3>location</h3>
+							<form action="index.html">
+								<input type="text" placeholder="Ex: london, newyork, rome" />
+							</form>
+							<div class="welcome-hero-form-icon">
+								<i class="flaticon-gps-fixed-indicator"></i>
+							</div>
+						</div>
+					</div>
+					<div class="welcome-hero-serch">
+						<button class="welcome-hero-btn" onclick="window.location.href='#'">
+							 search  <i data-feather="search"></i> 
+						</button>
+					</div>
+				</div> -->
+			</div>
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		
+
+		<!--works start -->
+		<br>
+		<br>
+		<section class="services-container" id="Services">
+			<h2 class="section-title">Solutions/Services We Offer</h2>
+	
+			<!-- Service 1 -->
+			<div class="service-item">
+				<div class="service-text">
+					<h3>Employer of Record</h3>
+					<p style="text-align: justify;">Our Employer of Record (EOR) services provide a seamless solution for compliance, efficient payroll management, and the streamlined hiring of international talent.
+						Hiring international employees and contractors requires strict adherence to local payroll regulations. Even minor non-compliance can lead to legal issues and hefty fines. Payroll management involves much more than just billing clients and paying employees—it includes taxes, social contributions, benefits, insurance, expenses, timesheets, and more. With constantly changing laws across various countries and cities, staying on top of everything can be overwhelming.
+						At Nityo Solutions, we specialize in ensuring full compliance with local financial laws, offering you peace of mind. Our team manages all aspects of payroll, from invoicing and payslips to tax calculations, expense reimbursements, holiday pay, and timesheet data. We stay up to date with changes in legislation and tax rates, helping you navigate complexities such as expatriate tax incentives.
+						With a tailored payroll solution that fits your unique needs, Nityo Solutions handles all back-office operations, so you can focus on growing your business—without the headache of managing payroll and compliance.
+						</p>
+				</div>
+				<div class="service-image">
+					<img src="11.jpg" alt="Employer of Record">
+				</div>
+			</div>
+	
+			<!-- Service 2 -->
+			<div class="service-item reverse">
+				<div class="service-text">
+					<h3>Employed Payroll Solutions for Contractors</h3>
+					<p style="text-align: justify;">Contractors working on a daily or hourly rate often seek a solution that provides the benefits typically covered under social security when working as an employee. At Nityo Solutions, we offer an Employed Payroll Solution for contractors, allowing them to be hired on our payroll as contract employees. This solution ensures they receive the same benefits as regular employees, including social security coverage, while working based on their agreed daily rate.</p>
+				</div>
+				<div class="service-image">
+					<img src="22.jpg" alt="Employed Payroll Solutions">
+				</div>
+			</div>
+	
+			<!-- Service 3 -->
+			<div class="service-item">
+				<div class="service-text">
+					<h3>Independent / Freelance Compliance Solutions</h3>
+					<p style="text-align: justify;">For self-employed professionals and freelancers, navigating tax regulations, benefits, and compliance can be challenging. At Nityo Solutions, we offer a comprehensive Self-Employed/Freelance Solution that enables freelancers to work independently while ensuring they remain compliant with local laws.
+						Our solution provides freelancers with access to benefits like social security, tax filings, and other legal protections, all while maintaining their flexibility as independent contractors. We manage all the administrative aspects, allowing freelancers to focus on their work without the worry of compliance and paperwork.
+						</p>
+				</div>
+				<div class="service-image">
+					<img src="33.jpg" alt="Independent/Freelance Solutions">
+				</div>
+			</div>
+		</section>
+
+		
+
+
+		<!--reviews start -->
+		<section id="values" class="reviews">
+			<div class="section-header">
+				<h2>Our Values</h2>
+				
+			</div><!--/.section-header-->
+			<div class="reviews-content">
+				<div class="testimonial-carousel">
+				    <div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<h4 style="text-align: center;">Consistency</h4>
+							
+							<div class="testimonial-comment">
+								<p>
+									Consistency drives all that we do. We aim to maintain a consistent quality, performance, and behaviour standard in every aspect of our operations. Our commitment is always to fulfil our promises and be dependable for our stakeholders.
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<h4 style="text-align: center;">Reliability</h4>
+							
+							<div class="testimonial-comment">
+								<p>
+									Reliability is vital to earning the trust of our stakeholders. We understand the significance of being trustworthy and dependable in all our dealings, and we strive to offer the best services and solutions experiences consistently.
+ 			                    </p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<h4 style="text-align: center;">Transparency</h4>
+							
+							<div class="testimonial-comment">
+								<p>
+									Transparency is a core principle of our business. We believe in open and honest communication and are
+                                    transparent about our practices, policies, values, and decision-making.	</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<h4 style="text-align: center;">Expertise</h4>
+							
+							<div class="testimonial-comment">
+								<p>
+									Expertise is a hallmark of our company. We focus on acquiring and honing a high level of knowledge and skill in our area of operations and industry. This expertise enables us to deliver exception.</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+				    
+				</div>
+			</div>
+
+		</section><!--/.reviews-->
+		<!--reviews end -->
+
+		<!-- statistics strat -->
+		<section id="statistics"  class="statistics">
+			<div class="container">
+				<div class="statistics-counter"> 
+					<div class="col-md-3 col-sm-6">
+						<div class="single-ststistics-box">
+							<h3>Located in</h3>
+							<div class="statistics-content">
+								<div class="counter">44</div> <span>+</span>
+							</div><!--/.statistics-content-->
+							<h3>Countries</h3>
+						</div><!--/.single-ststistics-box-->
+					</div><!--/.col-->
+					<div class="col-md-3 col-sm-6">
+						<div class="single-ststistics-box">
+							<h3>More than</h3>
+							<div class="statistics-content">
+								<div class="counter">31</div> <span>000+</span>
+							</div><!--/.statistics-content-->
+							<h3>Global Employees</h3>
+						</div><!--/.single-ststistics-box-->
+					</div><!--/.col-->
+					<div class="col-md-3 col-sm-6">
+						<div class="single-ststistics-box">
+							<h3>Globally</h3>
+							<div class="statistics-content">
+								<div class="counter">3</div> <span>000+</span>
+							</div><!--/.statistics-content-->
+							<h3>Clients Served</h3>
+						</div><!--/.single-ststistics-box-->
+					</div><!--/.col-->
+					<div class="col-md-3 col-sm-6">
+						<div class="single-ststistics-box">
+							<h3>Recieved</h3>
+							<div class="statistics-content">
+								<div class="counter">50</div> <span>+</span>
+							</div><!--/.statistics-content-->
+							<h3>Awards</h3>
+						</div><!--/.single-ststistics-box-->
+					</div><!--/.col-->
+				</div><!--/.statistics-counter-->	
+			</div><!--/.container-->
+
+		</section><!--/.counter-->	
+		<!-- statistics end -->
+
+	
+			<!--explore start -->
+			<section id="explore" class="explore">
+				<div class="container">
+					<div class="section-header">
+						<h2>Global Offices
+						</h2>
+						
+					</div><!--/.section-header-->
+					
+					<!-- Navigation Tabs -->
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#" onclick="showSection('americas')">Americas</a></li>
+						<li><a href="#" onclick="showSection('emea')">EMEA</a></li>
+						<li><a href="#" onclick="showSection('asean')">ASEAN</a></li>
+						<li><a href="#" onclick="showSection('anz')">ANZ</a></li>
+						<li><a href="#" onclick="showSection('apac')">APAC</a></li>
+					</ul>
+			
+					<!-- Tab Content -->
+					<div id="americas" class="explore-content tab-section">
+						<!-- Add your cards here for Americas -->
+						<div  class="row justify-content-start">
+							<div class="col-md-4 col-sm-6">
+								<div class="single-explore-item">
+									<div class="single-explore-img">
+										<img src="usa.png" alt="USA">
+									</div>
+									<div class="single-explore-txt">
+										<h2>USA</h2>
+										<h3>Nityo Infotech Corporation<br>666 Plainsboro Road, Suite 1285<br>Plainsboro, NJ 08536</h3>
+										<p><b>E-mail: getintouch@nityo.com<br>Country Manager: Akash Tiwari<br>+16092449435</b></p>
+										<hr>
+										<h3>Nityo Infotech Corporation<br>Corporate Business Center, 200 Continental Drive Christiana, Suite 401, Newark, DE 19713, United States</h3>
+										<p><b>E-mail: getintouch@nityo.com<br>Country Manager: Akash Tiwari</b></p>
+									</div>
+								</div>
+							</div>
+						
+							<div class="col-md-4 col-sm-6">
+								<div class="single-explore-item">
+									<div class="single-explore-img">
+										<img src="maxico.png" alt="Mexico">
+									</div>
+									<div class="single-explore-txt">
+										<h2>México</h2>
+										<h3>Nityo Infotech Corporation México, S de RL de CV<br>Calz. Gral. Mariano Escobedo 526 (Torre Concreta), office 824<br>Col. Anzures, Miguel Hidalgo, 11590, Ciudad de Mexico, Mexico</h3>
+										<p><b>E-mail: getintouch@nityo.com<br>Country Manager: Armando Pinzon</b></p>
+									</div>
+								</div>
+							</div>
+						
+							<div class="col-md-4 col-sm-6">
+								<div class="single-explore-item">
+									<div class="single-explore-img">
+										<img src="canada.png" alt="Canada">
+									</div>
+									<div class="single-explore-txt">
+										<h2>Canada</h2>
+										<h3>Nityo Infotech Corporation<br>1155 North Service Road, West,<br>Unit 11, Suite #16,<br>Oakville, ON L6M 3E3, Canada</h3>
+										<p><b>E-mail: getintouch@nityo.com<br>Country Manager: Akash Tiwari</b></p>
+									</div>
+								</div>
+							</div>
+						
+							<div class="col-md-4 col-sm-6">
+								<div class="single-explore-item">
+									<div class="single-explore-img">
+										<img src="brazil.png" alt="Brazil">
+									</div>
+									<div class="single-explore-txt">
+										<h2>Brazil</h2>
+										<h3>Nityo Infotech do Brasil Serviços de Tecnologia LTDA<br>Rua Joaquim Manuel de Macedo, 305, Barra Funda, Zip Code 01136-010 – São Paulo</h3>
+										<p><b>E-mail: getintouch@nityo.com<br>Country Manager: Mariluci Durante</b></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+
+
+					
+					<div id="emea" class="explore-content tab-section" style="display:none;">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="uk.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+									
+
+								  <h2>United Kingdom</h2>
+									<h3>Nityo Infotech Limited (EMEA HQ)
+										309, Davidson House, Forbury Square
+										Reading, Berkshire
+										United Kingdom, RG1 3EU</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+                                      Country Manager: Mayank Pande</b></p>
+										
+								
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="spain.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								
+
+								  <h2>	Spain</h2>
+									<h3>NITYO INFOTECH SPAIN S.L
+										Muntaner, 239 AT - 08021,
+										Barcelona, Spain</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+                                       Country Manager: Riyaz Khan</b></p>
+										
+								
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="france.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								
+
+								  <h2>	France</h2>
+									<h3>Nityo Infotech Services SAS
+										25 place de la Madeleine,
+										75008 Paris</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+										Country Manager: Riyaz Khan</b></p>
+									</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="germany.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								
+
+								  <h2>	Germany</h2>
+									<h3>NITYO INFOTECH GmbH
+										Alt-Heerdt 104, Dusseldorf - 40549,
+										Germany</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+                                        Country Manager: Riyaz Khan</b></p>
+									</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="turkey.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								
+
+								  <h2>	Turkey</h2>
+									<h3>NİTYO BİLİŞİM HİZMETLERİ ANONİM ŞİRKETİ
+										ŞİRİNEVLER MAH. FETİH CAD. ZEKİ MÜREN SK. NO:7/3 BAHÇELİEVLER,
+										İSTANBUL / TURKEY</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+										</b></p>
+									</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="france.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								<h2>	Poland</h2>
+									<h3>Nityo Infotech Sp. z o.o.
+										Żelazna street no 40 apt. 101, 10th floor,
+										00-832 Warsaw – Centre, Poland</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com</b></p>
+									</div>
+							</div>
+						</div>
+						
+					</div>
+			
+					<div id="asean" class="explore-content tab-section" style="display:none;">
+						
+					</div>
+			
+					<div id="anz" class="explore-content tab-section" style="display:none;">
+						
+					</div>
+			
+					<div id="apac" class="explore-content tab-section" style="display:none;">
+						
+					</div>
+				</div><!--/.container-->
+			</section>
+			
+			<!--explore end -->
+
+
+
+		<!--subscription strat -->
+		<br>
+		<br>
+		<section id="Mission"  class="subscription">
+			<div class="container">
+				<div class="subscribe-title text-center">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="mission">
+								<h3>Our Mission</h3>
+								<p>
+									To elevate Customer Business Equity through exceptional transformation, cutting-edge technology and skilled talent.		</p>
+							</div>
+						</div>
+						
+						<div class="col-md-6">
+							<div class="vision">
+								<h3>Our Vision</h3>
+								<p>
+									Empower our customers to focus on Core Business Competencies through innovative and competitive IT solutions.		</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+		</section><!--/subscription-->	
+		<!--subscription end -->
+
+
+		<!--footer start-->
+		<footer id="contact"  class="footer">
+			<div class="container">
+				<div class="footer-menu">
+		           	<div class="row">
+			           	<div class="col-sm-3">
+			           		 <div class="navbar-header">
+								<div class="logo-container">
+									<img src="nityo_high_resolution_logo (1).png" alt="Logo" class="logo">
+									<!-- <h1 class="logo-text">Nityo</h1> --> <!-- This can be used instead of the logo image if needed -->
+								  </div>
+				                
+				            </div><!--/.navbar-header-->
+			           	</div>
+			           	<!-- <div class="col-sm-9">
+			           		<ul class="footer-menu-item">
+			                    <li class="scroll"><a href="#works">how it works</a></li>
+			                    <li class="scroll"><a href="#explore">explore</a></li>
+			                    <li class="scroll"><a href="#reviews">review</a></li>
+			                    <li class="scroll"><a href="#blog">blog</a></li>
+			                    <li class="scroll"><a href="#contact">contact</a></li>
+			                    <li class=" scroll"><a href="#contact">my account</a></li>
+			                </ul>
+			           	</div> -->
+		           </div>
+				</div>
+				<div class="hm-footer-copyright">
+					<div class="row">
+						<div class="col-sm-5">
+							<p>
+								Nityo <a href="https://www.nityo.com/">Infotech</a>
+							</p><!--/p-->
+							<span><i class="fa fa-phone"> +16097995959</i></span> <br>
+								
+
+<span><i class="fa fa-whatsapp"></i>+1 (609) 853-1028</span><br>
+
+
+<span><i class="fa fa-envelope"></i> getintouch@nityo.com</span>
+						</div>
+						<div class="col-sm-7">
+							<div class="footer-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>	
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+					</div>
+					
+				</div><!--/.hm-footer-copyright-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-->
+		<!--footer end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+
+        <!--feather.min.js-->
+        <script  src="assets/js/feather.min.js"></script>
+
+        <!-- counter js -->
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/waypoints.min.js"></script>
+
+        <!--slick.min.js-->
+        <script src="assets/js/slick.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		     
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+
+		<script>
+			function showSection(sectionId) {
+    event.preventDefault(); // Prevent scrolling to top
+    const sections = document.querySelectorAll('.tab-section');
+    sections.forEach(section => section.style.display = 'none');
+
+    const activeSection = document.getElementById(sectionId);
+    if (activeSection) {
+        activeSection.style.display = 'block';
+    }
+
+    const tabs = document.querySelectorAll('.nav-tabs li');
+    tabs.forEach(tab => tab.classList.remove('active'));
+
+    event.target.parentElement.classList.add('active');
+}
+
+		</script>
+        
+    </body>
+	
+</html>
