@@ -8,7 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		
+
+
+		
         
+
         <!--font-family-->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
         
@@ -54,6 +59,65 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
         <![endif]-->
+		<style>
+			.item-card {
+			  border: 1px solid #ddd;
+			  border-radius: 5px;
+			  padding: 20px;
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: space-between;
+			  height: 100%;
+			}
+		  
+			.card-title {
+			  padding: 15px;
+			  border-radius: 5px 5px 0 0;
+			  color: #fff;
+			  text-align: center;
+			  font-size: 18px;
+			}
+		  
+			.body-text {
+			  flex-grow: 1;
+			  padding: 15px 10px;
+			  text-align: center;
+			}
+		  
+			.row {
+			  display: flex;
+			  flex-wrap: wrap;
+			}
+		  
+			.col-lg-3, .col-md-6 {
+			  display: flex;
+			  align-items: stretch;
+			}
+		  
+			.red {
+				background-color: #02218f;
+			}
+		  
+			.l-blue {
+				background-color: #02218f;
+			}
+		  
+			.green {
+				background-color: #02218f;
+			}
+		  
+			.blue {
+			  background-color: #02218f;
+			}
+		  
+			/* Responsive Layout */
+			@media (max-width: 767px) {
+			  .col-md-6 {
+				flex: 0 0 100%;
+				max-width: 100%;
+			  }
+			}
+		  </style>>
 
 		<style>
 			.welcome-hero {
@@ -558,8 +622,9 @@ video {
 
 		</section><!--/.welcome-hero-->
 		<!--welcome-hero end -->
-
-		<br>
+		    <br>
+			<br>
+		    <br>
 			<br>
 			<br>
 			
@@ -709,63 +774,74 @@ video {
 		
 
 
-		<!--reviews start -->
-		<section id="values" class="reviews">
-			<div class="section-header">
-				<h2>Our Values</h2>
-				
-			</div><!--/.section-header-->
-			<div class="reviews-content">
-				<div class="testimonial-carousel">
-				    <div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<h4 style="text-align: center;">Consistency</h4>
-							
-							<div class="testimonial-comment">
-								<p>
-									Consistency drives all that we do. We aim to maintain a consistent quality, performance, and behaviour standard in every aspect of our operations. Our commitment is always to fulfil our promises and be dependable for our stakeholders.
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-					<div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<h4 style="text-align: center;">Reliability</h4>
-							
-							<div class="testimonial-comment">
-								<p>
-									Reliability is vital to earning the trust of our stakeholders. We understand the significance of being trustworthy and dependable in all our dealings, and we strive to offer the best services and solutions experiences consistently.
- 			                    </p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-					<div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<h4 style="text-align: center;">Transparency</h4>
-							
-							<div class="testimonial-comment">
-								<p>
-									Transparency is a core principle of our business. We believe in open and honest communication and are
-                                    transparent about our practices, policies, values, and decision-making.	</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-					<div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<h4 style="text-align: center;">Expertise</h4>
-							
-							<div class="testimonial-comment">
-								<p>
-									Expertise is a hallmark of our company. We focus on acquiring and honing a high level of knowledge and skill in our area of operations and industry. This expertise enables us to deliver exception.</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-				    
-				</div>
-			</div>
-
-		</section><!--/.reviews-->
 		<!--reviews end -->
+		<h1 style="text-align: center;font-size: 30px;">Our Values</h1>
+		<br>
+		<br>
+
+		<section class="mt-5 cards-section">
+			<div class="container">
+			 
+			  <div class="row justify-content-center">
+				<div class="col-lg-3 col-md-6 mt-md-3 d-flex">
+				  <div class="item-card">
+					<div class="body">
+					  <div class="card-title red">
+						<h5 style="color: #fff;">Consistency</h5>
+					  </div>
+					  <div class="body-text text-center">
+						Consistency drives all that we do. We aim to maintain a consistent quality, performance, and behaviour standard in every aspect of our operations. Our commitment is always to fulfil our promises and be dependable for our stakeholders.
+					  </div>
+					</div>
+				  </div>
+				</div>
+		  
+				<div class="col-lg-3 col-md-6 mt-md-3 d-flex">
+				  <div class="item-card">
+					<div class="body">
+					  <div class="card-title l-blue">
+						<h5 style="color: #fff;">Reliability</h5>
+					  </div>
+					  <div class="body-text text-center">
+						Reliability is vital to earning the trust of our stakeholders. We understand the significance of being trustworthy and dependable in all our dealings, and we strive to offer the best services and solutions experiences consistently.
+					  </div>
+					</div>
+				  </div>
+				</div>
+		  
+				<div class="col-lg-3 col-md-6 mt-md-3 d-flex">
+				  <div class="item-card">
+					<div class="body">
+					  <div class="card-title green">
+						<h5 style="color: #fff;">Transparency</h5>
+					  </div>
+					  <div class="body-text text-center">
+						Transparency is key to fostering trust. We ensure that our processes and communications are open, honest, and clear, ensuring our stakeholders understand every step of our journey.
+					  </div>
+					</div>
+				  </div>
+				</div>
+		  
+				<div class="col-lg-3 col-md-6 mt-md-3 d-flex">
+				  <div class="item-card">
+					<div class="body">
+					  <div class="card-title blue">
+						<h5 style="color: #fff;">Expertise</h5>
+					  </div>
+					  <div class="body-text text-center">
+						Expertise is a hallmark of our company. We focus on acquiring and honing a high level of knowledge and skill in our area of operations and industry. This expertise enables us to deliver exceptional solutions.
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <hr>
+			</div>
+		  </section>
+
+
+		  <br>
+		  
 
 	
 
@@ -1014,6 +1090,7 @@ video {
 
 		</section><!--/subscription-->	
 		<!--subscription end -->
+	
 
 
 		<!--footer start-->
@@ -1024,7 +1101,7 @@ video {
 			           	<div class="col-sm-3">
 			           		 <div class="navbar-header">
 								<div class="logo-container">
-									<img src="" alt="Logo" class="logo">
+									<img src="nityo_high_resolution_logo (1).png" alt="Logo" class="logo">
 									<!-- <h1 class="logo-text">Nityo</h1> --> <!-- This can be used instead of the logo image if needed -->
 								  </div>
 				                
@@ -1158,6 +1235,38 @@ video {
 
 </script>
 			 -->
+
+		
+				<script src="cards/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="cards/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $().ready(function(){
+        $('[rel="tooltip"]').tooltip();
+
+        $('a.scroll-down').click(function(e){
+            e.preventDefault();
+            scroll_target = $(this).data('href');
+             $('html, body').animate({
+                 scrollTop: $(scroll_target).offset().top - 60
+             }, 1000);
+        });
+
+    });
+
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
+
+
+
+			 </script>
         
     </body>
 	
