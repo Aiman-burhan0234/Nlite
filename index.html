@@ -336,7 +336,39 @@ video {
     background: #0056b3;
     color: #fff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+} 
+
+/* Custom Styles for Navigation Tabs */
+.nav-tabs {
+  border-bottom: 2px solid #ddd;
 }
+
+.nav-tabs .nav-link {
+  color: #555;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .nav-tabs .nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+
 
 .single-explore-item {
     background: linear-gradient(135deg, #f0f4ff, #e6ecff);
@@ -860,28 +892,45 @@ video {
 
 
 		  <br>
+	
+  
+<!-- Section Header -->
+
+
+
+  
 		  
 
 	
-
 	
 			<!--explore start -->
 			<section id="explore" class="explore">
 				<div class="container">
-					<div class="section-header">
-						<h2>Global Offices
-						</h2>
-						
-					</div><!--/.section-header-->
+					<div class="section-header text-center" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+						<h2 style="font-size: 4rem;">Global Offices</h2>
+						<br>
+					  </div>
+					  <!--/.section-header-->
+					  
+					  <!-- Navigation Tabs -->
+					  <ul class="nav nav-tabs justify-content-center" role="tablist" style="border-bottom: none; text-align: center;">
+						<li class="nav-item">
+						  <a class="nav-link active" href="#" onclick="showSection('americas')" role="tab" style="font-size: 1.5rem;">Americas</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#" onclick="showSection('emea')" role="tab" style="font-size: 1.5rem;">EMEA</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#" onclick="showSection('asean')" role="tab" style="font-size: 1.5rem;">ASEAN</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#" onclick="showSection('anz')" role="tab" style="font-size: 1.5rem;">ANZ</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#" onclick="showSection('apac')" role="tab" style="font-size: 1.5rem;">APAC</a>
+						</li>
+					  </ul>
 					
-					<!-- Navigation Tabs -->
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="#" onclick="showSection('americas')">Americas</a></li>
-						<li><a href="#" onclick="showSection('emea')">EMEA</a></li>
-						<li><a href="#" onclick="showSection('asean')">ASEAN</a></li>
-						<li><a href="#" onclick="showSection('anz')">ANZ</a></li>
-						<li><a href="#" onclick="showSection('apac')">APAC</a></li>
-					</ul>
 			
 					<!-- Tab Content -->
 					<div id="americas" class="explore-content tab-section">
