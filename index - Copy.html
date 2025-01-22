@@ -60,23 +60,6 @@
 
         <![endif]-->
 		<style>
-			.single-explore-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 15px;
-    background: #f5f5f5;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.single-explore-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-		</style>
-		<style>
 			 .smooth-scrolling {
     will-change: transform;
 }
@@ -627,8 +610,8 @@ video {
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 			                    <li class=" scroll active"><a href="#home">home</a></li>
 			                    <li class="scroll"><a href="#servi">Services</a></li>
-			                    <!-- <li class="scroll"><a href="#values">Our Values</a></li>
-			                    <li class="scroll"><a href="#Mission">Mission </a></li> -->
+			                    <li class="scroll"><a href="#values">Our Values</a></li>
+			                    <li class="scroll"><a href="#Mission">Mission </a></li>
 			                    <!-- <li class="scroll"><a href="#blog">blog</a></li> -->
 			                    <li class="scroll"><a href="#contact">contact</a></li>
 			                </ul><!--/.nav -->
@@ -926,27 +909,33 @@ video {
 					<div class="section-header text-center" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
 						<h2 style="font-size: 4rem;">Global Offices</h2>
 						<br>
-					</div>
-					<ul class="nav nav-tabs justify-content-center" role="tablist" style="border-bottom: none; text-align: center;">
+					  </div>
+					  <!--/.section-header-->
+					  
+					  <!-- Navigation Tabs -->
+					  <ul class="nav nav-tabs justify-content-center" role="tablist" style="border-bottom: none; text-align: center;">
 						<li class="nav-item">
-							<a class="nav-link active" href="#" onclick="showSection('americas')" role="tab" style="font-size: 1.5rem;">Americas</a>
+						  <a class="nav-link active" href="#" onclick="showSection('americas')" role="tab" style="font-size: 1.5rem;">Americas</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" onclick="showSection('emea')" role="tab" style="font-size: 1.5rem;">EMEA</a>
+						  <a class="nav-link" href="#" onclick="showSection('emea')" role="tab" style="font-size: 1.5rem;">EMEA</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" onclick="showSection('asean')" role="tab" style="font-size: 1.5rem;">ASEAN</a>
+						  <a class="nav-link" href="#" onclick="showSection('asean')" role="tab" style="font-size: 1.5rem;">ASEAN</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" onclick="showSection('anz')" role="tab" style="font-size: 1.5rem;">ANZ</a>
+						  <a class="nav-link" href="#" onclick="showSection('anz')" role="tab" style="font-size: 1.5rem;">ANZ</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" onclick="showSection('apac')" role="tab" style="font-size: 1.5rem;">APAC</a>
+						  <a class="nav-link" href="#" onclick="showSection('apac')" role="tab" style="font-size: 1.5rem;">APAC</a>
 						</li>
-					</ul>
+					  </ul>
 					
+			
+					<!-- Tab Content -->
 					<div id="americas" class="explore-content tab-section">
-						<div class="row justify-content-start">
+						<!-- Add your cards here for Americas -->
+						<div  class="row justify-content-start">
 							<div class="col-md-4 col-sm-6">
 								<div class="single-explore-item">
 									<div class="single-explore-img">
@@ -1001,417 +990,275 @@ video {
 									</div>
 								</div>
 							</div>
-							
 						</div>
+						
 					</div>
+					
+
+
 					
 					<div id="emea" class="explore-content tab-section" style="display:none;">
-						<div class="row">
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="uk.png" alt="USA">
-									</div>
-									<div class="single-explore-txt">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="uk.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+									
+
+								  <h2>United Kingdom</h2>
+									<h3>Nityo Infotech Limited (EMEA HQ)
+										309, Davidson House, Forbury Square
+										Reading, Berkshire
+										United Kingdom, RG1 3EU</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+                                      Country Manager: Mayank Pande</b></p>
 										
-	
-									  <h2>United Kingdom</h2>
-										<h3>Nityo Infotech Limited (EMEA HQ)
-											309, Davidson House, Forbury Square
-											Reading, Berkshire
-											United Kingdom, RG1 3EU</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-										  Country Manager: Mayank Pande</b></p>
-											
-									
-									</div>
+								
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="spain.png" alt="USA">
-									</div>
-									<div class="single-explore-txt">
-									
-	
-									  <h2>	Spain</h2>
-										<h3>NITYO INFOTECH SPAIN S.L
-											Muntaner, 239 AT - 08021,
-											Barcelona, Spain</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-										   Country Manager: Riyaz Khan</b></p>
-											
-									
-									</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="spain.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								
+
+								  <h2>	Spain</h2>
+									<h3>NITYO INFOTECH SPAIN S.L
+										Muntaner, 239 AT - 08021,
+										Barcelona, Spain</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+                                       Country Manager: Riyaz Khan</b></p>
+										
+								
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="france.png" alt="USA">
-									</div>
-									<div class="single-explore-txt">
-									
-	
-									  <h2>	France</h2>
-										<h3>Nityo Infotech Services SAS
-											25 place de la Madeleine,
-											75008 Paris</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-											Country Manager: Riyaz Khan</b></p>
-										</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="france.png" alt="USA">
 								</div>
-							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="germany.png" alt="USA">
+								<div class="single-explore-txt">
+								
+
+								  <h2>	France</h2>
+									<h3>Nityo Infotech Services SAS
+										25 place de la Madeleine,
+										75008 Paris</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+										Country Manager: Riyaz Khan</b></p>
 									</div>
-									<div class="single-explore-txt">
-									
-	
-									  <h2>	Germany</h2>
-										<h3>NITYO INFOTECH GmbH
-											Alt-Heerdt 104, Dusseldorf - 40549,
-											Germany</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-											Country Manager: Riyaz Khan</b></p>
-										</div>
-								</div>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="turkey.png" alt="USA">
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="germany.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								
+
+								  <h2>	Germany</h2>
+									<h3>NITYO INFOTECH GmbH
+										Alt-Heerdt 104, Dusseldorf - 40549,
+										Germany</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+                                        Country Manager: Riyaz Khan</b></p>
 									</div>
-									<div class="single-explore-txt">
-									
-	
-									  <h2>	Turkey</h2>
-										<h3>NİTYO BİLİŞİM HİZMETLERİ ANONİM ŞİRKETİ
-											ŞİRİNEVLER MAH. FETİH CAD. ZEKİ MÜREN SK. NO:7/3 BAHÇELİEVLER,
-											İSTANBUL / TURKEY</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-											</b></p>
-										</div>
-								</div>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="france.png" alt="USA">
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="turkey.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								
+
+								  <h2>	Turkey</h2>
+									<h3>NİTYO BİLİŞİM HİZMETLERİ ANONİM ŞİRKETİ
+										ŞİRİNEVLER MAH. FETİH CAD. ZEKİ MÜREN SK. NO:7/3 BAHÇELİEVLER,
+										İSTANBUL / TURKEY</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+										</b></p>
 									</div>
-									<div class="single-explore-txt">
-									<h2>	Poland</h2>
-										<h3>Nityo Infotech Sp. z o.o.
-											Żelazna street no 40 apt. 101, 10th floor,
-											00-832 Warsaw – Centre, Poland</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com</b></p>
-										</div>
-								</div>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="italy.png" alt="USA">
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="france.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								<h2>	Poland</h2>
+									<h3>Nityo Infotech Sp. z o.o.
+										Żelazna street no 40 apt. 101, 10th floor,
+										00-832 Warsaw – Centre, Poland</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com</b></p>
 									</div>
-									<div class="single-explore-txt">
-									<h2>	Italy</h2>
-										<h3>NITYO INFOTECH S.R.L
-											MILANO (MI) VIA DELL
-											ANNUNCIATA 23/4 CAP 20121</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-										 Country Manager: Riyaz Khan</b></p>
-										</div>
-								</div>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="dubai.png" alt="USA">
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="italy.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								<h2>	Italy</h2>
+									<h3>NITYO INFOTECH S.R.L
+										MILANO (MI) VIA DELL
+										ANNUNCIATA 23/4 CAP 20121</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+                                     Country Manager: Riyaz Khan</b></p>
 									</div>
-									<div class="single-explore-txt">
-									<h2>	UAE</h2>
-										<h3>Nityo Infotech IT Services
-											Office No. 507 Makateb Building, Po Box - 119957 Opposite Toyota Showroom,
-											Dubai, UAE</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-											Country Manager: G. Hari Narayanan</b></p>
-										</div>
-								</div>
 							</div>
-							
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="qatar.png" alt="USA">
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="dubai.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								<h2>	UAE</h2>
+									<h3>Nityo Infotech IT Services
+										Office No. 507 Makateb Building, Po Box - 119957 Opposite Toyota Showroom,
+										Dubai, UAE</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+                                        Country Manager: G. Hari Narayanan</b></p>
 									</div>
-									<div class="single-explore-txt">
-									<h2>	Qatar</h2>
-										<h3>Nityo Infotech IT Services
-											Zone 16, Street 820, Building 36,
-											P.O. Box 35189, Doha, Qatar</h3><br>
-										<p><b>
-											
-									   E-mail: getintouch@nityo.com
-										Country Manager: G. Hari Narayanan
-									   </b></p>
-										</div>
-								</div>
 							</div>
-							
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="czechia.png" alt="USA">
-									</div>
-									<div class="single-explore-txt">
-									<h2>	Czechia</h2>
-										<h3>NITYO INFOTECH IT SERVICES s.r.o
-											Varšavská 715/36 120 00 Praha 2
-											Czechia</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-											Country Manager: Riyaz Khan</b></p>
-										</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="slovakia.png" alt="USA">
-									</div>
-									<div class="single-explore-txt">
-									<h2>	Slovakia</h2>
-										<h3>NITYO INFOTECH IT SERVICES s.r.o
-											Hviezdna 22/33, 945 01 Komárno,
-											SK</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-											Country Manager: Riyaz Khan</b></p>
-										</div>
-								</div>
-							</div>
+						</div>
 						
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="austria.png" alt="USA">
-									</div>
-									<div class="single-explore-txt">
-									<h2>Austria</h2>
-										<h3>Nityo Infotech GmbH
-											Belvedere 8- 1100 Vienna
-											Austria</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-											Country Manager: Riyaz Khan</b></p>
-										</div>
+                        <div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="qatar.png" alt="USA">
 								</div>
-							</div>
-							
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="ukraine.png" alt="USA">
+								<div class="single-explore-txt">
+								<h2>	Qatar</h2>
+									<h3>Nityo Infotech IT Services
+										Zone 16, Street 820, Building 36,
+										P.O. Box 35189, Doha, Qatar</h3><br>
+									<p><b>
+										
+                                   E-mail: getintouch@nityo.com
+                                    Country Manager: G. Hari Narayanan
+						           </b></p>
 									</div>
-									<div class="single-explore-txt">
-									<h2>	Ukraine</h2>
-										<h3>NITYO INFOTECH UKRAINE
-											04053, Ukraine, Shevchenkivskiy rayon,
-											Lvivska ploscha, bud 4A, office 8.</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-											Country Manager: Riyaz Khan</b></p>
-										</div>
-								</div>
 							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="romania.png" alt="USA">
-									</div>
-									<div class="single-explore-txt">
-									<h2>	Romania</h2>
-										<h3>NITYO INFOTECH IT SERVICES S.R.L
-											Bucharest Sector 4, METALURGIEI Boulevard,
-											No. 132, Block B1c, Floor 4, Apartment 42,
-											POST CODE 041837</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-											Country Manager: Riyaz Khan</b></p>
-										</div>
-								</div>
-							</div>
-							
 						</div>
-					</div>
+						
+                        <div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="czechia.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								<h2>	Czechia</h2>
+									<h3>NITYO INFOTECH IT SERVICES s.r.o
+										Varšavská 715/36 120 00 Praha 2
+										Czechia</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+                                        Country Manager: Riyaz Khan</b></p>
+									</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="slovakia.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								<h2>	Slovakia</h2>
+									<h3>NITYO INFOTECH IT SERVICES s.r.o
+										Hviezdna 22/33, 945 01 Komárno,
+										SK</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+                                        Country Manager: Riyaz Khan</b></p>
+									</div>
+							</div>
+						</div>
 					
-					<div id="asean" class="explore-content tab-section" style="display:none;">
-						<div class="row">
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="indonesia.png" alt="USA">
-									</div>
-									<div class="single-explore-txt">
-										<h2>Indonesia</h2>
-										<h3>PT Nityo Infotech
-											Menara Batavia
-											Level 26, JI.K.H. Mas Mansyur No. Kav. 126,
-											Karet Tengsin, Tanah Abang, Kota Jakarta
-											Pusat, Daerah Khusus Ibukota Jakarta 10250</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-							                Country Manager: Prashanth Jayaraman</b></p>
-									</div>
+                        <div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="austria.png" alt="USA">
 								</div>
+								<div class="single-explore-txt">
+								<h2>Austria</h2>
+									<h3>Nityo Infotech GmbH
+										Belvedere 8- 1100 Vienna
+										Austria</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+                                        Country Manager: Riyaz Khan</b></p>
+									</div>
 							</div>
-							
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="thailand.png" alt="USA">
-									</div>
-									<div class="single-explore-txt">
-									<h2>	Thailand</h2>
-										<h3>Nityo Technologies Ltd
-											1 Empire Tower, Tower 3,
-											16th Floor Unit 1612 South,
-											Sathorn Road, Yannawa,
-											Sathorn, Bangkok 10120 Thailand</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-							                Country Manager: Jay Mukherje</b></p>
-									
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="vietnam.png" alt="USA">
-									</div>
-									<div class="single-explore-txt">
-									 <h2>	Vietnam</h2>
-										<h3>Nityo Infotech Services(Vietnam) Limited Liability Company
-											Level 3, ACM Building, 96 Cao ThangStreet,
-											Ward 4, Dist 3. Ho Chi Minh City</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-                                            Country Manager: Rahul Richard Das/b></p>
-										</div>
-								</div>
-							</div>
-							
-                            <div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="malaysia.png" alt="USA">
-									</div>
-									<div class="single-explore-txt">
-									<h2>Malaysia</h2>
-										<h3>Nityo Infotech Services Sdn Bhd
-											Unit #35-01B , Q Sentral No.2A,
-											Jalan Stesen Sentral 2,
-											Kuala Lumpur Sentral,
-											50470 Kuala Lumpur, Malaysia</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-                                            Country Manager: Rajasekhar Gummadi</b></p>
-											
-											<h3>Brandt Global business Services Malaysia
-												Block C-15 2&3, Lorong Bayan Indah 3,
-												Bay Avenue, 11900 Penang Malaysia</h3><br>
-											<p><b>
-												E-mail: getintouch@nityo.com
-												Country Manager: Rajasekhar Gummadi</b></p>
-											</div>
-									</div>
-								</div>
-								
-							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="singapore.png" alt="USA">
-									</div>
-									<div class="single-explore-txt">
-									    <h2>Singapore</h2>
-										<h3>Nityo Infotech Services Pte. Ltd.
-											10, UBI Crescent,
-											UBI Techpark,
-											#03 - 28/30, Lobby 'B'
-											Singapore - 408564.</h3><br>
-										    <p><b>
-											E-mail: getintouch@nityo.com
-                                            Country Manager: Vivek Chadha
-                                            Contact No. : +65 6635 3723
-										    </b></p>
-											<h3>3P Solutions Pte Ltd
-												10, UBI Crescent,
-												UBI Techpark,
-												#07 - 34, Lobby 'B'
-												Singapore - 408564.</h3><br>
-											<p><b>
-												E-mail: getintouch@nityo.com
-                                                Country Manager: Deep Singhania</b></p>
-											
-											<h3>Progression Consultancy Pte Ltd
-												10, UBI Crescent,
-												UBI Techpark,
-												#07 - 34, Lobby 'B'
-												Singapore - 408564.</h3><br>
-											<p><b>
-												
-                                              E-mail: getintouch@nityo.com
-                                              Country Manager: Deep Singhania</b></p>
-											
-									</div>
-								</div>
-								
-							</div>
-							<div class="col-md-4 col-sm-6">
-								<div class="single-explore-item">
-									<div class="single-explore-img">
-										<img src="philippines.png" alt="USA">
-									</div>
-								    <div class="single-explore-txt">
-									    <h2>Philippines</h2>
-										<h3>Nityo Infotech Services Philippines Inc.
-											Unit 1001 10th Floor, 139 Corporate Center,
-											Valero St. Salcedo Village, Makati City</h3><br>
-										<p><b>
-											E-mail: getintouch@nityo.com
-											Country Manager: Gowtham Baskaran
-									   </b></p>
-								    </div>
-								</div>
-							</div>
-							
 						</div>
-	
-						<!-- ASEAN content -->
+						
+                        <div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="ukraine.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								<h2>	Ukraine</h2>
+									<h3>NITYO INFOTECH UKRAINE
+										04053, Ukraine, Shevchenkivskiy rayon,
+										Lvivska ploscha, bud 4A, office 8.</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+                                        Country Manager: Riyaz Khan</b></p>
+									</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="romania.png" alt="USA">
+								</div>
+								<div class="single-explore-txt">
+								<h2>	Romania</h2>
+									<h3>NITYO INFOTECH IT SERVICES S.R.L
+										Bucharest Sector 4, METALURGIEI Boulevard,
+										No. 132, Block B1c, Floor 4, Apartment 42,
+										POST CODE 041837</h3><br>
+									<p><b>
+										E-mail: getintouch@nityo.com
+                                        Country Manager: Riyaz Khan</b></p>
+									</div>
+							</div>
+						</div>
 					</div>
-		
+			
+					<div id="asean" class="explore-content tab-section" style="display:none;">
+						
+					</div>
+			
 					<div id="anz" class="explore-content tab-section" style="display:none;">
-						<!-- ANZ content -->
+						
 					</div>
-		
+			
 					<div id="apac" class="explore-content tab-section" style="display:none;">
-						<!-- APAC content -->
+						
 					</div>
-				</div>
+				</div><!--/.container-->
 			</section>
+			
 			<!--explore end -->
 
 
@@ -1476,12 +1323,12 @@ video {
 			           	</div> -->
 		           </div>
 				</div>
-				<!-- <div class="hm-footer-copyright">
+				<div class="hm-footer-copyright">
 					<div class="row">
 						<div class="col-sm-5">
 							<p>
 								Nityo <a href="https://www.nityo.com/">Infotech</a>
-							</p>
+							</p><!--/p-->
 							<span><i class="fa fa-phone"> +16097995959</i></span> <br>
 								
 
@@ -1499,10 +1346,8 @@ video {
 						</div>
 					</div>
 					
-				</div> -->
-			
-			</div>
-			<!--/.container-->
+				</div><!--/.hm-footer-copyright-->
+			</div><!--/.container-->
 <!-- 
 			<div id="scroll-Top">
 				<div class="return-to-top">
@@ -1627,8 +1472,6 @@ video {
 
 
 			 </script>
-
-
         
     </body>
 	
