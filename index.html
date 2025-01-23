@@ -125,19 +125,19 @@
 			}
 		  
 			.red {
-				background-color: #02218f;
+				background-color: #a0d6f4;
 			}
 		  
 			.l-blue {
-				background-color: #02218f;
+				background-color:#a0d6f4;
 			}
 		  
 			.green {
-				background-color: #02218f;
+				background-color: #a0d6f4;
 			}
 		  
 			.blue {
-			  background-color: #02218f;
+			  background-color: #a0d6f4;
 			}
 		  
 			
@@ -342,7 +342,7 @@ video {
     display: inline-block;
     padding: 12px 25px;
     border-radius: 5px 5px 0 0;
-    background: #007bff;
+    background: #a0d6f4;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -350,7 +350,7 @@ video {
 }
 
 .nav-tabs a:hover, .nav-tabs .active a {
-    background: #0056b3;
+    background:  #a0d6f4;
     color: #fff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 } 
@@ -370,7 +370,7 @@ video {
 }
 
 .nav-tabs .nav-link.active {
-  background-color: #007bff;
+  background-color: #a0d6f4;
   color: #fff;
 }
 
@@ -687,10 +687,7 @@ video {
 		    <br>
 			<br>
 		    <br>
-			<br>
-			<br>
 			
-			<br>
 
 				<!-- statistics strat -->
 				<section id="statistics"  class="statistics">
@@ -743,6 +740,9 @@ video {
 				<br><br>
 
 			<div id="servi">
+				<h1 style="text-align: center;color:  #a0d6f4;font-size: 45px;">Our Services</h1>
+				<br>
+				<br>
 			  <section class="probootstrap-section-half d-md-flex" >
 				<div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url(11.jpg)"></div>
 				<div class="probootstrap-text" >
@@ -843,7 +843,7 @@ video {
 
 
 		<!--reviews end -->
-		<h1 style="text-align: center;font-size: 30px;">Our Values</h1>
+		<h1 style="text-align: center;color:  #a0d6f4;font-size: 45px;">Our Values</h1>
 		<br>
 		<br>
 
@@ -924,7 +924,7 @@ video {
 			<section id="explore" class="explore">
 				<div class="container">
 					<div class="section-header text-center" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-						<h2 style="font-size: 4rem;">Global Offices</h2>
+						<h2 style="text-align: center;color:  #a0d6f4;font-size: 45px;">Global Offices</h2>
 						<br>
 					</div>
 					<ul class="nav nav-tabs justify-content-center" role="tablist" style="border-bottom: none; text-align: center;">
@@ -1545,7 +1545,7 @@ video {
 
 		<script>
 			function showSection(sectionId) {
-    event.preventDefault(); // Prevent scrolling to top
+    event.preventDefault(); 
     const sections = document.querySelectorAll('.tab-section');
     sections.forEach(section => section.style.display = 'none');
 
@@ -1574,59 +1574,8 @@ video {
 
    </script>
 		
-<!-- <script>
-	document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('.probootstrap-section-half .probootstrap-image');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('probootstrap-flip');
-            } else {
-                entry.target.classList.remove('probootstrap-flip');
-            }
-        });
-    }, { threshold: 0.5 });
-
-    sections.forEach(image => {
-        observer.observe(image);
-    });
-});
-
-</script>
-			 -->
 
 		
-				<script src="cards/js/jquery-1.10.2.js" type="text/javascript"></script>
-<script src="cards/js/bootstrap.min.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-    $().ready(function(){
-        $('[rel="tooltip"]').tooltip();
-
-        $('a.scroll-down').click(function(e){
-            e.preventDefault();
-            scroll_target = $(this).data('href');
-             $('html, body').animate({
-                 scrollTop: $(scroll_target).offset().top - 60
-             }, 1000);
-        });
-
-    });
-
-    function rotateCard(btn){
-        var $card = $(btn).closest('.card-container');
-        console.log($card);
-        if($card.hasClass('hover')){
-            $card.removeClass('hover');
-        } else {
-            $card.addClass('hover');
-        }
-    }
-
-
-
-			 </script>
 
 
         
